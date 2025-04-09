@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/marcosschlick/nodejs-calculadora-atraso#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "prettier": "^3.5.3"
   }
