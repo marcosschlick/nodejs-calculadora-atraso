@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-calculadora-atraso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosschlick/nodejs-calculadora-atraso.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcosschlick/nodejs-calculadora-atraso/issues"
+  },
+  "homepage": "https://github.com/marcosschlick/nodejs-calculadora-atraso#readme"
+}
