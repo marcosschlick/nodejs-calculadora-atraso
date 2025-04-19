@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo de Dívida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculadora de Dívidas</h1>
+    <form id="debtForm">
+      <div class="form-group">
+        <label for="valorOriginal">Valor Original:</label>
+        <input type="number" id="valorOriginal" step="0.01" min="0" required />
+      </div>
+      <div class="form-group">
+        <label for="taxaMulta">Taxa de Multa (%):</label>
+        <input type="number" id="taxaMulta" step="0.01" min="0" required />
+      </div>
+      <div class="form-group">
+        <label for="periodoMeses">Período (meses):</label>
+        <input type="number" id="periodoMeses" step="1" min="0" required />
+      </div>
+      <div class="form-group">
+        <label for="taxaJurosMensal">Taxa de Juros Mensal (%):</label>
+        <input
+          type="number"
+          id="taxaJurosMensal"
+          step="0.01"
+          min="0"
+          required
+        />
+      </div>
+      <button type="submit">Calcular</button>
+    </form>
+    <h2>Resultado:</h2>
+    <textarea id="result" readonly rows="6" cols="50"></textarea>
+    <script src="script.js"></script>
+  </body>
+</html>
