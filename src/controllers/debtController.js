@@ -25,12 +25,13 @@ export const calcularDividaCompleta = (req, res) => {
     return res.status(400).json({ erro: "Valores não podem ser negativos" });
   }
 
-  const multa = calcularMulta(valorOriginal, taxaMulta);
+  const multa = Number(calcularMulta(valorOriginal, taxaMulta)).toFixed(2);
   const juros = Number(
     calcularJuros(valorOriginal, periodoMeses, taxaJurosMensal),
   ).toFixed(2);
-  const valorFinal = calcularValorFinal(valorOriginal, multa, juros);
-
+  const valorFinal = Number(
+    calcularValorFinal(valorOriginal, multa, juros),
+  ).toFixed(2);
   res.json({
     valorOriginal,
     multa,
