@@ -18,10 +18,10 @@ document.getElementById("debtForm").addEventListener("submit", async (e) => {
     const resultado = await response.json();
 
     const formatoTexto =
-      `Valor original: ${resultado.valorOriginal}\n` +
-      `Multa: ${resultado.multa}\n` +
-      `Juros: ${resultado.juros}\n` +
-      `Valor final: ${resultado.valorFinal}`;
+      `Valor original: ${resultado.valorOriginal.toFixed(2)}\n` +
+      `Multa: ${resultado.multa.toFixed(2)}\n` +
+      `Juros: ${resultado.juros.toFixed(2)}\n` +
+      `Valor final: ${resultado.valorFinal.toFixed(2)}`;
 
     document.getElementById("result").value = formatoTexto;
   } catch (error) {
