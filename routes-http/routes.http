@@ -1,19 +1,19 @@
 ### CALCULAR DÍVIDA COMPLETA
-POST http://localhost:3000/divida
+POST http://localhost:3333/divida
 Content-Type: application/json
 Accept: application/json
 
 {
-  "valorOriginal": 1000,
-  "taxaMulta": 50,
-  "periodoMeses": 10,
-  "taxaJurosMensal": 5
+  "valorOriginal": 100,
+  "taxaMulta": 5,
+  "periodoMeses": 3,
+  "taxaJurosMensal": 2
 }
 
 ### EXEMPLO DE RESPOSTA ESPERADA (apenas para referência)
 #{
-#  "valorOriginal": 1000,
-#  "multa": 500,
-#  "juros": "628.89",
-#  "valorFinal": 2128.89
+#  "valorOriginal": 100,
+#  "multa": 5,
+#  "juros": 6.120800000000003,
+#  "valorFinal": 111.1208
 #}
