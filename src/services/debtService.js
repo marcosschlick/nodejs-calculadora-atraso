@@ -3,10 +3,8 @@ export function calcularMulta(valorOriginal, taxaMulta) {
 }
 
 export function calcularJuros(valorBase, periodoMeses, taxaJurosMensal) {
-  let valorJurosAcumulados = valorBase;
-  for (let mes = 0; mes < periodoMeses; mes++) {
-    valorJurosAcumulados *= 1 + taxaJurosMensal / 100;
-  }
+  let valorJurosAcumulados =
+    valorBase * (1 + taxaJurosMensal / 100) ** periodoMeses;
   return valorJurosAcumulados - valorBase;
 }
 
