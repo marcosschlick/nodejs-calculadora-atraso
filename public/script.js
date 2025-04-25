@@ -11,7 +11,7 @@ document.getElementById("debtForm").addEventListener("submit", async (e) => {
         valorOriginal: getVal("valorOriginal"),
         taxaMulta: getVal("taxaMulta"),
         periodoMeses: getVal("periodoMeses"),
-        taxaJurosMensal: getVal("taxaJurosMensal"),
+        taxaJurosMensal: getVal("jurosMensal"),
       }),
     });
 
@@ -23,8 +23,8 @@ document.getElementById("debtForm").addEventListener("submit", async (e) => {
       `Juros: R$ ${resultado.juros.toFixed(2)}\n` +
       `Valor final: R$ ${resultado.valorFinal.toFixed(2)}`;
 
-    document.getElementById("result").value = formatoTexto;
+    document.getElementById("resultado").value = formatoTexto;
   } catch (error) {
-    document.getElementById("result").value = `Erro: ${error.message}`;
+    document.getElementById("resultado").value = `Erro: ${error.message}`;
   }
 });
